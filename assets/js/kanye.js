@@ -1,6 +1,6 @@
-// Kayne API
+// KAYNE API
 function getKanyeQuote() {
-  const requestUrl = "https://api.kanye.rest";
+  var requestUrl = "https://api.kanye.rest";
 
   fetch(requestUrl)
     .then(response => response.json())
@@ -12,14 +12,14 @@ function getKanyeQuote() {
     });
 }
 function displayKanyeQuote(quote) {
-  const quoteElement = document.getElementById("kanye-quote");
+  var quoteElement = document.getElementById("kanye-quote");
   quoteElement.textContent = `"${quote}" - Kanye West`;
 }
 getKanyeQuote();
-document.addEventListener("DOMContentLoaded", function() {
-  document.getElementById("quoteBtn").addEventListener("click", function() {
+ {
+  document.getElementById("get-kanye-quote-btn").addEventListener("click", function() {
     getKanyeQuote();
   });
-});
+};
 
 
