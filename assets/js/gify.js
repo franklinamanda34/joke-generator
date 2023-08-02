@@ -21,12 +21,10 @@ function searchGif(query) {
       console.error("Error fetching random GIF:", error);
     });
 }
-
 function displayRandomGif(gifUrl) {
   var gifElement = document.getElementById("random-gif");
   gifElement.setAttribute("src", gifUrl);
 }
-
 document.getElementById("search-form").addEventListener("submit", function(event) {
   event.preventDefault();
   var searchQuery = document.getElementById("search-input").value;
@@ -34,7 +32,6 @@ document.getElementById("search-form").addEventListener("submit", function(event
     searchGif(searchQuery);
   }
 });
-
 document.getElementById("get-random-gif-btn").addEventListener("click", function() {
  
   var searchQuery = document.getElementById("search-input").value;
