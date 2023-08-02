@@ -1,8 +1,4 @@
 // USELESS FACTS API
-document.getElementById("factBtn").addEventListener("click", function() {
-  getRandomUselessFact();
-});
-
 function getRandomUselessFact() {
   var requestURL = "https://uselessfacts.jsph.pl/api/v2/facts/random";
 
@@ -20,7 +16,9 @@ function getRandomUselessFact() {
       console.error('Error fetching useless fact:', error);
     });
 }
-
+document.getElementById("factBtn").addEventListener("click", function() {
+  getRandomUselessFact();
+});
 function displayFact(fact) {
   document.getElementById("factDisplay").textContent = 'Random Useless Fact:\n' + fact;
 }
