@@ -9,34 +9,36 @@
     <h1>The witty wizards Joke-Generator</h1>
 </header>
 <body>
-    <h3>giphy-Generator</h3>
-    <div class="row" id="gifContainer">
-        <div class="column" >
-            <div class="card">
-                <p class="emoji1"></p>
-                <img class="gif" id="giphy">
-                
-                <button class="generate" id="generate1">Enter</button>
-            </div>
-            </div>
-                <h3>Random Joke-Generator</h3>
-            <div class="column" >
-                <div class="card">
-                    <p class="emoji1"></p>
-                    <p class="jokeInput">Joke:</p>
-                    <p class="answerInput">answer:</p>
-                    <button class="generate" id="generate2">Enter</button>
-                </div>
-            </div>
-                <h3>Random Fact-Generator</h3>
-            <div class="column" >
-                <div class="card">
-                    <p class="fact"></p>
-                    <p class="FactInput">Random Fact:</p>
-                    <button class="generate" id="generate3">Enter</button>
-                </div>
+    <div class="gifContainer">
+        <h1 class="header">Random GIF:</h1>
+        <img class="random-gif" id="random-gif" src="" alt="Random Gif">
+        <button class="RandomBtn" id="Random-Btn">Get Random Gif</button>
     </div>
 
-    <script src="script.js"></script>
+    <div class="searchContainer">
+        <h1 class="header">Search Gif:</h1>
+        <form id="searchForm">
+            <input type="text" id="search-input" placeholder="Enter search form">
+            <button type="submit" id="search-button">Search</button>
+        </form>
+    </div>
+
+    <div class="kanye-Container">
+        <h1>Kanye Quote Generator</h1>
+        <p class="quote" id="kanye-quote"></p>
+            <button class="get-quote" id="quoteBtn">Generate</button>
+    </div>
+
+    <div class="useless-facts">
+        <h1>Useless Fact Generator</h1>
+        <button id="factBtn">Get Useless Fact</button>
+        <p id="factDisplay"></p>
+    </div>
+
+    
+<script src="./assets/js/gify.js"></script>
+<script src="./assets/js/kanye.js"></script>
+<!-- <script src="./assets/js/script.js"></script> -->
+<script src="./assets/js/useless.js"></script>
 </body>
 </html>

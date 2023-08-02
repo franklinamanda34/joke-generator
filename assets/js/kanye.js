@@ -17,7 +17,7 @@ function displayKanyeQuote(quote) {
 }
 getKanyeQuote();
 document.addEventListener("DOMContentLoaded", function() {
-  document.getElementById("get-kanye-quote-btn").addEventListener("click", function() {
+  document.getElementById("quoteBtn").addEventListener("click", function() {
     getKanyeQuote();
   });
 });

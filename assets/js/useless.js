@@ -1,5 +1,5 @@
 // USELESS FACTS API
-document.getElementById("getFactButton").addEventListener("click", function() {
+document.getElementById("factBtn").addEventListener("click", function() {
   getRandomUselessFact();
 });
 function getRandomUselessFact() {

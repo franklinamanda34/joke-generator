@@ -28,7 +28,7 @@ function displayRandomGif(gifUrl) {
 }
 
 // GIF search based on the user ( Search Bar )
-document.getElementById("search-form").addEventListener("submit", function(event) {
+document.getElementById("searchForm").addEventListener("submit", function(event) {
   event.preventDefault();
   const searchQuery = document.getElementById("search-input").value;
   if (searchQuery.trim() !== "") {
@@ -37,7 +37,7 @@ document.getElementById("search-form").addEventListener("submit", function(event
 });
 
 searchGif("random"); // Perform an initial search for random GIFs
-document.getElementById("get-random-gif-btn").addEventListener("click", function() {
+document.getElementById("Random-Btn").addEventListener("click", function() {
   const searchQuery = document.getElementById("search-input").value;
   if (searchQuery.trim() !== "") {
     searchGif(searchQuery);
