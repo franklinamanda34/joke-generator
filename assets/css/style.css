@@ -1,0 +1,121 @@
+/* Pure CSS */
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  background-color: #ffffff; /* Light gray background color */
+ 
+}
+header {
+  background-color: #694f92;
+  color: #ffffff;
+  padding: 10px;
+  text-align: center;
+  box-shadow: 0 0 25px rgb(53, 52, 52); 
+  
+  
+font-size: 150%;
+border-radius: 90px;
+margin-bottom: 30px;
+margin-top: 20px; /*backs header off of the browser navigation bar*/
+margin-left: 100px;
+margin-right: 100px;
+
+
+
+
+ 
+}
+.gifContainer, .searchContainer, .kanye-Container, .useless-facts, .joke-container {
+  margin: 150px;
+}
+.kanye-Container {
+  align-self: flex-start;
+}
+/* Normal CSS */
+.gifContainer {
+    background-color: #696b6b6e; 
+    padding: 50px; 
+   
+    border: 1px solid #ccc; 
+    border-radius: 30px; 
+    box-shadow: 0 0 15px rgb(148, 148, 148); 
+    max-width: 800px; 
+    margin: 0 auto; 
+  text-align: center;
+  margin-bottom: 20px; /*allows containers to be spaced out*/
+  
+}
+.random-gif {
+  max-width: 100%;
+  border: 2px solid #696b6b6e;
+  
+  
+  border-radius: 8px;
+  max-height: 300px; /* Limit the maximum height of the GIFs */
+}
+.searchContainer {
+  text-align: center;
+}
+#search-form {
+  margin-top: 10px;
+}
+.kanye-Container {
+    background-color: #696b6b6e; 
+    padding: 50px; 
+    border: 1px solid #ccc; 
+    border-radius: 30px; 
+    box-shadow: 0 0 15px rgba(148, 148, 148); 
+    max-width: 800px; 
+    margin: 0 auto; 
+  text-align: center;
+  margin-bottom: 20px;
+  
+  
+}
+.quote {
+  font-style: italic;
+}
+.useless-facts, .joke-container {
+  text-align: center; background-color: #696b6b6e; 
+  padding: 50px; 
+  border: 1px solid #ccc; 
+  border-radius: 30px; 
+  box-shadow: 0 0 15px rgba(148, 148, 148); 
+  max-width: 800px; 
+  margin: 0 auto; 
+  margin-bottom: 20px;
+}
+.joke-punchline {
+
+  font-weight: bold;
+  
+}
+/* Button Styling */
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 30px;
+  background-color: #007BFF; /* Blue color for buttons */
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+button:hover {
+  background-color: #0056B3; /* Darker blue color on hover */
+}
+
+.searchContainer { background-color:#696b6b6e; 
+    padding: 50px; 
+    border: 1px solid #ccc; 
+    border-radius: 30px; 
+    box-shadow: 0 0 15px rgba(148, 148, 148); 
+    max-width: 800px; 
+    margin: 0 auto; 
+    margin-bottom: 20px;
+}
+
