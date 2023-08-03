@@ -5,17 +5,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Random Entertainment</title>
 </head>
-<header>
+<header id="headerNav">
     <h1>Random Entertainment</h1>
+
+    <nav>
+        <ul>
+            <li>
+                <a href="#gifContainer">Gifs</a>
+            </li>
+            <li>
+                <a href="#kanyeContainer">Kanye Quotes</a>
+            </li>
+            <li>
+                <a href="#uselessContainer">Useless Facts</a>
+            </li>
+            <li>
+                <a href="#jokeContainer">Random Jokes</a>
+            </li>
+        </ul>
+    </nav>
 </header>
 <body>
-    <div class="gifContainer">
+    <div class="gifContainer" id="gifContainer">
         <h1 class="header">Random GIF:</h1>
         <img class="random-gif" id="random-gif" src="" alt="Random Gif">
         <button class="RandomBtn" id="get-random-gif-btn">Get Random Gif</button>
     </div>
 
-    <div class="searchContainer">
+    <div class="searchContainer" >
         <h1 class="header">Search Gif:</h1>
         <form id="search-form">
             <input type="text" id="search-input" placeholder="Enter search form">
@@ -23,19 +40,19 @@
         </form>
     </div>
 
-    <div class="kanye-Container">
+    <div class="kanye-Container" id="kanyeContainer">
         <h1>Kanye Quote Generator</h1>
         <p class="quote" id="kanye-quote"></p>
             <button class="get-quote" id="get-kanye-quote-btn">Generate</button>
     </div>
 
-    <div class="useless-facts">
+    <div class="useless-facts" id="uselessContainer">
         <h1>Useless Fact Generator</h1>
         <button id="factBtn">Get Useless Fact</button>
         <p id="factDisplay"></p>
     </div>
 
-    <div class="joke-container">
+    <div class="joke-container" id="jokeContainer">
         <h1>random Joke:</h1>
         <p class="joke-setup" id="joke-setup"></p>
         <p class="joke-punchline" id="joke-punchline"></p>
