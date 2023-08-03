@@ -1,0 +1,104 @@
+# <Random Entertainment>
+
+## Description
+
+We as a team, Wanted to Create our project to demonstrate our skill using multiple serverside APIS. We also used Purecss as our CSS Framework. The four serverside APIS we used are for entertainment purposes. We used Giphy Developers as one of our APIS to generate random gifs. There is also a random Kanye Quote API that we used to get random quotes. A random joke API is also one of the APIS we used to create a Theme for our project as a Random entertainment website. Lastly a random fact API is our last API.
+
+
+
+
+## Usage
+
+-At the top of the page there is our title and nav links to bring you to desired entertainment. By clicking any of the nav links it will direct you to clicked nav link.
+
+-By clicking the buttons on desired entertainment block you will get any entertainment requested.
+
+-You may search up any gif you want and it will git you that requested gif rated pg-13.
+
+-By searching a gif it will record your search and pu it into local storage to create a search history.
+
+## Technologies used
+
+-HTML
+
+-CSS
+
+-PURECSS
+https://purecss.io/
+
+-Javascript
+
+-Giphy Developers
+https://developers.giphy.com/
+
+useless facts API
+https://uselessfacts.jsph.pl/api/v2/facts/random
+
+-Joke API
+https://official-joke-api.appspot.com/random_joke
+
+-Kanye Quote API
+https://api.kanye.rest
+
+## Credits
+
+Collaborators
+
+-Adrian Estrella
+GitHub: aestrella0140
+
+-Amanda Franklin
+GitHub: franklinamanda34 
+
+-Joshua King
+GitHub: jishyk
+
+## License
+
+MIT License
+
+Copyright (c) 2023 franklinamanda34
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+
+
+## Features
+
+-Giphy Generator
+
+search desired gif or just click get random gif to get gif.
+
+-Kanye Quote Generator
+
+Click Generate button to to get random Kanye quote
+
+-Useless Fact Generator
+
+Click get useless fact to get random fact.
+
+-Random Joke
+
+Click Get A Joke button to get a random Joke.
+
+## Mock-up img
+
+![alt Random Entertainment](assets/images/)
+
+
