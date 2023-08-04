@@ -1,5 +1,7 @@
 # <Random Entertainment>
 
+## URL : https://franklinamanda34.github.io/joke-generator/
+
 ## Description
 
 We as a team, Wanted to Create our project to demonstrate our skill using multiple serverside APIS. We also used Purecss as our CSS Framework. The four serverside APIS we used are for entertainment purposes. We used Giphy Developers as one of our APIS to generate random gifs. There is also a random Kanye Quote API that we used to get random quotes. A random joke API is also one of the APIS we used to create a Theme for our project as a Random entertainment website. Lastly a random fact API is our last API.
@@ -99,6 +101,6 @@ Click Get A Joke button to get a random Joke.
 
 ## Mock-up img
 
-![alt Random Entertainment](assets/images/)
+![alt Random Entertainment](assets/images/Screenshot%202023-08-03%20174257.png)
 
 
