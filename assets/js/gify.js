@@ -1,3 +1,6 @@
+var storageInput = document.querySelector(".storage");
+var storedInput = localStorage.getItem("textinput");
+var text = document.querySelector(".text");
 //  WORKING GIF API
 function searchGif(query) {
   var apiKey = "wNDGimxyBhtWAzxBEFmHmSIQESy89ifV"; // Replace with your Giphy API key
@@ -5,10 +8,10 @@ function searchGif(query) {
   var contentFilter = "pg-13"; // Set your preferred content safety rating
   var requestUrl = `https://api.giphy.com/v1/gifs/search?api_key=${apiKey}&q=${query}&rating=${contentFilter}&media_filter=${mediaFilter}`;
   var locale = "en"; // Specify the language for the joke
-  
+
   fetch(requestUrl)
-    .then(response => response.json())
-    .then(data => {
+    .then((response) => response.json())
+    .then((data) => {
       if (data.data.length > 0) {
         var randomIndex = Math.floor(Math.random() * data.data.length);
         var gifUrl = data.data[randomIndex].images.original.url;
@@ -17,7 +20,7 @@ function searchGif(query) {
         console.log("No GIFs found for the search term:", query);
       }
     })
-    .catch(error => {
+    .catch((error) => {
       console.error("Error fetching random GIF:", error);
     });
 }
@@ -27,22 +30,37 @@ function displayRandomGif(gifUrl) {
   gifElement.setAttribute("src", gifUrl);
 }
 
-document.getElementById("search-form").addEventListener("submit", function(event) {
-  event.preventDefault();
-  var searchQuery = document.getElementById("search-input").value;
-  if (searchQuery.trim() !== "") {
-    searchGif(searchQuery);
-  }
+document
+  .getElementById("search-form")
+  .addEventListener("submit", function (event) {
+    event.preventDefault();
+    var searchQuery = document.getElementById("search-input").value;
+    if (searchQuery.trim() !== "") {
+      searchGif(searchQuery);
+    }
+  });
+
+document
+  .getElementById("get-random-gif-btn")
+  .addEventListener("click", function () {
+    var searchQuery = document.getElementById("search-input").value;
+
+    if (searchQuery.trim() !== "") {
+      searchGif(searchQuery);
+    } else {
+      searchGif("random");
+    }
+  });
+
+if (storageInput) {
+  Text.textContent = storedInput;
+}
+
+storageInput.addEventListener("input", (letter) => {
+  text.textContent = letter.target.value;
 });
 
-document.getElementById("get-random-gif-btn").addEventListener("click", function() {
- 
-  var searchQuery = document.getElementById("search-input").value;
-  
-  if (searchQuery.trim() !== "") {
-    searchGif(searchQuery);
-  } else {
-    searchGif("random");
-  }
-});
-searchGif("random"); // Display a random GIF 
+var savetoLocalStorage = () => {
+  localStorage.setItem('texinput', text.textContent);
+};
+searchGif("random"); // Display a random GIF
